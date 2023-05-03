@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liver!</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+      }
+      .container {
+        position: relative;
+        border: 5px solid #0275d8;
+      }
+      .centered {
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      .centered button {
+        margin-bottom: 10px;
+        border-color: #007bff;
+      }
+      .centered img {
+        margin: 20px 0;
+        max-width: 100%;
+        max-height: 300px;
+      }
+
+      .container.border {
+        border: 2px solid #007bff;
+        padding: 20px;
+        margin-bottom: 20px; /* Add margin to create space */
+        text-align: center;
+      }
+      #logo {
+        display: block;
+        margin: 10px auto;
+        max-width: 15%;
+        height: auto;
+      }
+
+      #objectImage {
+        max-width: 50%;
+        max-height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="assets\Logo.jpg" alt="Logo" />
+
+    <div class="container border">
+      <h1>All You Need To Know About Liver!</h1>
+      <p>
+        The liver is an organ about the size of a football. It sits just under
+        your rib cage on the right side of your abdomen. The liver is essential
+        for digesting food and ridding your body of toxic substances. Liver
+        disease can be inherited (genetic). Liver problems can also be caused by
+        a variety of factors that damage the liver, such as viruses, alcohol use
+        and obesity. Over time, conditions that damage the liver can lead to
+        scarring (cirrhosis), which can lead to liver failure, a
+        life-threatening condition. But early treatment may give the liver time
+        to heal.
+      </p>
+      <img id="objectImage" src="assets\1.png" alt="Liver" />
+      <div class="centered">
+        <a href="Model Page.html" target="_blank">
+          <button type="button" class="btn btn-primary">
+            Learn From Liver 3d Model!
+          </button>
+        </a>
+
+        <audio id="audioPlayer">
+          <source src="assets\Liver.m4a" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <button type="button" class="btn btn-primary" onclick="playAudio()">
+          Play Audio For Illustration!
+        </button>
+
+        <a
+          href="https://www.mayoclinic.org/diseases-conditions/liver-problems/symptoms-causes/syc-20374502"
+          target="_blank"
+        >
+          <button type="button" class="btn btn-primary">
+            Additional Resources
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script>
+      function playAudio() {
+        var audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.play();
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
